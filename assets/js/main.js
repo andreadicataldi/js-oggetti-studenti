@@ -5,7 +5,8 @@ var student = {
   age: 34,
 };
 for (var key in student) {
-  console.log(student[key]);
+  /* console.log(student[key]); */
+  document.getElementById("paragraph").innerHTML += " " + student[key];
 }
 //Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
 var students = [
@@ -26,9 +27,10 @@ var students = [
   },
 ];
 for (var i = 0; i < students.length; i++) {
-  console.log(students[i].name);
-  console.log(students[i].surname);
-  console.log(students[i].age);
+  /* console.log(students[i].name);
+  console.log(students[i].surname); */
+  document.getElementById("second-paragraph").innerHTML +=
+    " " + students[i].name + " " + students[i].surname;
 }
 //Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 var userStudent = {
